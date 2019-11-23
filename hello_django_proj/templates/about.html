@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %} About
+{% endblock %}
+     
+{% block content %}
+     <div class="about">
+          <h1>About </h1>
+          
+     </div>    
+     <p>
+               <a class="btn btn-info" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">PERSONAL INFOS</a>
+               <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">EDUCATIONAL INFOS</button>
+               <button class="btn btn-danger" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">OUT</button>
+             </p>
+             <div class="row">
+               <div class="col">
+                 <div class="collapse multi-collapse" id="multiCollapseExample1">
+                   <div class="card card-body">
+                     Name: Lynching R.Flores<br>
+                     <tr>Age: 18</tr><br>
+                     <tr>Gender: Female</tr><br>
+                     <tr>Address: Concepcion Pequena Naga City</tr><br>
+                     <tr>Contact#:09128838838</tr>
+                   </div>
+                 </div>
+               </div>
+               <div class="col">
+                 <div class="collapse multi-collapse" id="multiCollapseExample2">
+                   <div class="card card-body">
+                  School: Camarines Sur National High School<br>
+                  <tr>Senior High School</tr><br>
+                  <tr>School Address: Penafrancia Avenue Naga City</tr><br>
+                  
+                  <tr>School: Concepcion Pequena National High School</tr><br>
+                  <tr>Junior High School</tr><br>
+                  <tr>School Address: Concepcion Pequena Naga City</tr>
+
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+{% endblock %}

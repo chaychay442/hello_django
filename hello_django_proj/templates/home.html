@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %} Home
+{% endblock %}
+
+{% block content %}
+     <div class="jumbotron">
+          <h1>{{message_title}}</h1>
+          <p> {{message_content }}</p>
+          
+          <section id="main" role="main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                              
+                                <h1 id="title"></h1>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                
+                
+                
+                </section>
+                </body>
+                <style>
+                    body{
+                        height:7in;
+                        background-color: pink;
+                    }
+                    #errorMsgDiv{
+                        background-color:pink ;
+                        margin-top: 1cm;
+                        margin-bottom: 1cm;
+                    }
+                    .input{
+                        border: inset;
+                        
+                    }
+                    #title{
+                        margin-left: 5in;
+                        font-family: 'Times New Roman', Courier, monospace;
+                    
+                    }
+                    #button{
+                        border: outset;
+                        width: 2in;
+                        margin-left: .82in;
+                        margin-top: 1in;
+                        background-color: Blue;
+                        color: white;
+                    }
+                    #button:hover{
+                        background-color: black;
+                    }
+                    .label{
+                        font-size: 20px;
+                        margin-left: 3.6in;
+                    }
+                    #logo{
+                        margin-right: 1cm;
+                    }
+                
+                </style>
+                
+                <script>
+                
+                $(document).ready(function(){
+                    $("#button").click(function(){
+                        if($("#username").val()=="lynchay" && $("#password").val() == "lynchay")
+                        {
+                            window.location.replace("about.html")
+                        }
+                        else{
+                            $("#errorMsgDiv").html("Invalid Username and Password")
+                         
+                        }
+                    })
+                })
+                
+                
+                </script>
+
+     </div>
+{% endblock %}
+
